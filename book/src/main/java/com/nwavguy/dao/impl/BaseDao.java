@@ -19,7 +19,7 @@ public abstract class BaseDao {
      * update method used to execute: Insert/Update/Delete command
      * @return -1, means update failed, or it will return the number of rows that has been affected
      */
-    public int update(String sql,Object ... args){
+    public int update(String sql,Object... args){
         Connection connection = JdbcUtils.getConnection();
         try {
             return queryRunner.update(connection,sql,args);
@@ -39,7 +39,7 @@ public abstract class BaseDao {
      * @param <T>  generic type of returned object
      * @return
      */
-    public <T> T queryForOne(Class<T> type, String sql,Object ... args) {
+    public <T> T queryForOne(Class<T> type, String sql, Object... args) {
         Connection connection = JdbcUtils.getConnection();
         try {
             return queryRunner.query(connection, sql, new BeanHandler<T>(type), args);
@@ -59,7 +59,7 @@ public abstract class BaseDao {
      * @param <T>  generic type of returned object
      * @return
      */
-    public <T> List<T> queryForList(Class<T> type, String sql, Object ... args) {
+    public <T> List<T> queryForList(Class<T> type, String sql, Object... args) {
         Connection connection = JdbcUtils.getConnection();
         try {
             return queryRunner.query(connection, sql, new BeanListHandler<T>(type), args);
