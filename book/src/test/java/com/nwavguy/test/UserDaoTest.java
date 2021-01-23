@@ -1,5 +1,6 @@
-package com.nwavguy.dao;
+package com.nwavguy.test;
 
+import com.nwavguy.dao.UserDao;
 import com.nwavguy.dao.impl.UserDaoImpl;
 import com.nwavguy.pojo.User;
 import org.junit.Test;
