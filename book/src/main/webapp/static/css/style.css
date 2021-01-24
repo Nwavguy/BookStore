@@ -129,7 +129,17 @@ div{
 
 .login_form{
 	height:310px;
-	width:406px;
+	width:320px;
+	float: right;
+	margin-right:50px;
+	margin-top: 50px;
+	background-color: #fff;
+}
+
+
+.regist_form{
+	height:410px;
+	width:320px;
 	float: right;
 	margin-right:50px;
 	margin-top: 50px;
@@ -142,9 +152,15 @@ div{
 }
 
 .login_box{
+	 margin: 20px;
+	 height: 260px;
+	 width: 290px;
+}
+
+.regist_box{
 	margin: 20px;
-	height: 260px;
-	width: 366px;
+	height: 350px;
+	width: 290px;
 }
 
 h1 {
@@ -190,7 +206,7 @@ h1 {
 	background-color: #39987c;
 	border: none;
 	color: #fff;
-	width: 360px;
+	width: 250px;
 	height: 40px;
 }
 
