@@ -4,7 +4,8 @@
 <head>
 <meta charset="UTF-8">
 <title>Bookstore Homepage</title>
-<link type="text/css" rel="stylesheet" href="static/css/style.css" >
+	<%--include the base tag, css style and jquery file--%>
+	<%@ include file="/pages/common/head.jsp"%>
 </head>
 <body>
 	
@@ -170,11 +171,7 @@
 		</div>
 	
 	</div>
-	
-	<div id="bottom">
-		<span>
-			Copyright &copy;2020
-		</span>
-	</div>
+	<%--include footer content --%>
+	<%@include file="/pages/common/footer.jsp"%>
 </body>
 </html>

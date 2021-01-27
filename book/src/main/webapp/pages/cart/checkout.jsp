@@ -4,7 +4,8 @@
 <head>
 <meta charset="UTF-8">
 <title>结算页面</title>
-<link type="text/css" rel="stylesheet" href="../../static/css/style.css" >
+	<%--include the base tag, css style and jquery file--%>
+	<%@ include file="/pages/common/head.jsp"%>
 <style type="text/css">
 	h1 {
 		text-align: center;
@@ -17,12 +18,8 @@
 	<div id="header">
 			<img class="logo_img" alt="" src="../../static/img/logo.gif" >
 			<span class="wel_word">结算</span>
-			<div>
-				<span>欢迎<span class="um_span">韩总</span>光临尚硅谷书城</span>
-				<a href="../order/order.jsp">我的订单</a>
-				<a href="../../index.jsp">注销</a>&nbsp;&nbsp;
-				<a href="../../index.jsp">返回</a>
-			</div>
+			<%--include the meau after login success --%>
+			<%@ include file="/pages/common/login_success_menu.jsp"%>
 	</div>
 	
 	<div id="main">
@@ -31,11 +28,8 @@
 		
 	
 	</div>
-	
-	<div id="bottom">
-		<span>
-			尚硅谷书城.Copyright &copy;2015
-		</span>
-	</div>
+
+	<%--include footer content --%>
+	<%@include file="/pages/common/footer.jsp"%>
 </body>
 </html>

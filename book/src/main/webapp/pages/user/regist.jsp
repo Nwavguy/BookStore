@@ -4,9 +4,9 @@
 <head>
 <meta charset="UTF-8">
 <title>Membership Login</title>
-<base href="http://localhost:8080/book/">
-<link type="text/css" rel="stylesheet" href="static/css/style.css" >
-	<script type="text/javascript" src="static/script/jquery-1.7.2.js"></script>
+	<%--include the base tag, css style and jquery file--%>
+	<%@ include file="/pages/common/head.jsp"%>
+
 	<script type="text/javascript">
 		//After the page is loaded
 		$(function () {
@@ -134,10 +134,7 @@
 					</div>
 				</div>
 			</div>
-		<div id="bottom">
-			<span>
-				Copyright &copy;2020
-			</span>
-		</div>
+		<%--include footer content --%>
+		<%@include file="/pages/common/footer.jsp"%>
 </body>
 </html>

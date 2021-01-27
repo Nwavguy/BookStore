@@ -4,8 +4,8 @@
 <head>
 <meta charset="UTF-8">
 <title>Login Page</title>
-<base href="http://localhost:8080/book/">
-<link type="text/css" rel="stylesheet" href="static/css/style.css" >
+	<%--include the base tag, css style and jquery file--%>
+	<%@ include file="/pages/common/head.jsp"%>
 </head>
 <body>
 		<div id="login_header">
@@ -47,10 +47,7 @@
 					</div>
 				</div>
 			</div>
-		<div id="bottom">
-			<span>
-				&copy;2020
-			</span>
-		</div>
+		<%--include footer content --%>
+		<%@include file="/pages/common/footer.jsp"%>
 </body>
 </html>
