@@ -1,3 +1,4 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,7 +23,7 @@
 						<div class="login_box">
 							<div class="tit">
 								<h1>Login</h1>
-								<a href="regist.html">Sign up</a>
+								<a href="pages/user/regist.jsp">Sign up</a>
 							</div>
 							<div class="msg_cont">
 								<b></b>

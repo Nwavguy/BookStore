@@ -1,3 +1,4 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,10 +12,10 @@
 			<img class="logo_img" alt="" src="static/img/logo.gif" >
 			<span class="wel_word">Online Bookstore</span>
 			<div>
-				<a href="pages/user/login.html">Login</a> |
-				<a href="pages/user/regist.html">Register</a> &nbsp;&nbsp;
-				<a href="pages/cart/cart.html">Cart</a>
-				<a href="pages/manager/manager.html">Backend Managment</a>
+				<a href="pages/user/login.jsp">Login</a> |
+				<a href="pages/user/regist.jsp">Register</a> &nbsp;&nbsp;
+				<a href="pages/cart/cart.jsp">Cart</a>
+				<a href="pages/manager/manager.jsp">Backend Managment</a>
 			</div>
 	</div>
 	<div id="main">

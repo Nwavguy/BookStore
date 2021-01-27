@@ -30,17 +30,17 @@ public class RegistServlet extends HttpServlet {
                 // username already exists
                 System.out.println("Username[" + username +"] already exists!");
                 // Go back to the register page
-                req.getRequestDispatcher("/pages/user/regist.html").forward(req, resp);
+                req.getRequestDispatcher("/pages/user/regist.jsp").forward(req, resp);
             } else {
                 // register the user
                 userService.registUser(new User(null,username,password,email));
                 // jump to regist_sucess page
-                req.getRequestDispatcher("/pages/user/regist_success.html").forward(req, resp);
+                req.getRequestDispatcher("/pages/user/regist_success.jsp").forward(req, resp);
             }
         } else {
             System.out.println("Wrong verification code [" + code + "].");
             // Go back to the register page
-            req.getRequestDispatcher("/pages/user/regist.html").forward(req, resp);
+            req.getRequestDispatcher("/pages/user/regist.jsp").forward(req, resp);
         }
     }
 }
