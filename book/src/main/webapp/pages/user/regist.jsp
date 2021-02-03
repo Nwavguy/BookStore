@@ -101,11 +101,14 @@
 						<div class="regist_box">
 							<div class="tit">
 								<h1>Sign Up</h1>
-								<span class="errorMsg"></span>
+								<span class="errorMsg">
+									<%=request.getAttribute("msg")==null?"":request.getAttribute("msg")%>
+								</span>
 							</div>
 							<div class="form">
 								<form action="registServlet" method="post">
 									<input class="itxt" type="text" placeholder="Username"
+										   value="<%=request.getAttribute("username")==null?"":request.getAttribute("username")%>"
 										   autocomplete="off" tabindex="1" name="username" id="username" />
 									<br />
 									<br />
@@ -118,6 +121,7 @@
 									<br />
 									<br />
 									<input class="itxt" type="text" placeholder="email"
+										   value="<%=request.getAttribute("email")==null?"":request.getAttribute("email")%>"
 										   autocomplete="off" tabindex="1" name="email" id="email" />
 									<br />
 									<br />

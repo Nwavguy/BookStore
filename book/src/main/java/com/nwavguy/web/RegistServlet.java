@@ -27,6 +27,10 @@ public class RegistServlet extends HttpServlet {
         if ("abcde".equalsIgnoreCase(code)) {
             // check if username already exists
             if (userService.existUsername(username)) {
+                // store the error message in request scope
+                req.setAttribute("msg", "username already exists");
+                req.setAttribute("username", username);
+                req.setAttribute("email", email);
                 // username already exists
                 System.out.println("Username[" + username +"] already exists!");
                 // Go back to the register page
@@ -38,6 +42,10 @@ public class RegistServlet extends HttpServlet {
                 req.getRequestDispatcher("/pages/user/regist_success.jsp").forward(req, resp);
             }
         } else {
+            // store the error message in request scope
+            req.setAttribute("msg", "verification failed");
+            req.setAttribute("username", username);
+            req.setAttribute("email", email);
             System.out.println("Wrong verification code [" + code + "].");
             // Go back to the register page
             req.getRequestDispatcher("/pages/user/regist.jsp").forward(req, resp);

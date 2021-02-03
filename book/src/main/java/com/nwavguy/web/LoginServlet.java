@@ -22,6 +22,10 @@ public class LoginServlet extends HttpServlet {
         // call user service login method
         User user = userService.login(new User(null, username, password, null));
         if (user == null) {
+            req.setAttribute("msg","Wrong Username or Password.");
+            req.setAttribute("username", username);
+            // jump back to login page
+            // store the error message into Request scope
             System.out.println("login failed");
             req.getRequestDispatcher("/pages/user/login.jsp").forward(req, resp);
         } else {

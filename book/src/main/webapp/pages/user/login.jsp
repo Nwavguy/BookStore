@@ -27,12 +27,15 @@
 							</div>
 							<div class="msg_cont">
 								<b></b>
-								<span class="errorMsg">Enter username and password</span>
+								<span class="errorMsg">
+									<%=request.getAttribute("msg")==null?"Please enter username and password":request.getAttribute("msg")%>
+								</span>
 							</div>
 							<div class="form">
 								<form action="loginServlet" method="post">
 									<label>Username：</label>
-									<input class="itxt" type="text" placeholder="username" autocomplete="off" tabindex="1" name="username" />
+									<input class="itxt" type="text" placeholder="username" autocomplete="off" tabindex="1" name="username"
+										   value="<%=request.getAttribute("username")==null?"":request.getAttribute("username")%>" />
 									<br />
 									<br />
 									<label>Password：</label>
