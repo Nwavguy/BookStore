@@ -3,6 +3,7 @@ package com.nwavguy.web;
 import com.nwavguy.pojo.User;
 import com.nwavguy.service.UserService;
 import com.nwavguy.service.impl.UserServiceImpl;
+import com.nwavguy.utils.WebUtils;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -89,6 +90,8 @@ public class UserServlet extends BaseServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         String action = req.getParameter("action");
+
+        User user = WebUtils.copyParamToBean(req.getParameterMap(),new User());
         try {
             // get the method
             Method method =  this.getClass().getDeclaredMethod(action,HttpServletRequest.class,HttpServletResponse.class);
