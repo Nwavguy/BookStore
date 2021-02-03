@@ -28,7 +28,8 @@
 							<div class="msg_cont">
 								<b></b>
 								<span class="errorMsg">
-									<%=request.getAttribute("msg")==null?"Enter username and password":request.getAttribute("msg")%>
+<%--									<%=request.getAttribute("msg")==null?"Enter username and password":request.getAttribute("msg")%>--%>
+									${empty requestScope.msg ? "Enter username and password":requestScope.msg}
 								</span>
 							</div>
 							<div class="form">
@@ -36,7 +37,7 @@
 									<input type="hidden" name="action" value="login" />
 									<label>Username：</label>
 									<input class="itxt" type="text" placeholder="username" autocomplete="off" tabindex="1" name="username"
-										   value="<%=request.getAttribute("username")==null?"":request.getAttribute("username")%>" />
+										   value="${requestScope.username}" />
 									<br />
 									<br />
 									<label>Password：</label>

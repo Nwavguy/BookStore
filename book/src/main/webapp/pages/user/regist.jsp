@@ -102,14 +102,14 @@
 							<div class="tit">
 								<h1>Sign Up</h1>
 								<span class="errorMsg">
-									<%=request.getAttribute("msg")==null?"":request.getAttribute("msg")%>
+									${ requestScope.msg}
 								</span>
 							</div>
 							<div class="form">
 								<form action="userServlet" method="post">
 									<input type="hidden" name="action" value="regist">
 									<input class="itxt" type="text" placeholder="Username"
-										   value="<%=request.getAttribute("username")==null?"":request.getAttribute("username")%>"
+										   value="${requestScope.username}"
 										   autocomplete="off" tabindex="1" name="username" id="username" />
 									<br />
 									<br />
@@ -122,7 +122,7 @@
 									<br />
 									<br />
 									<input class="itxt" type="text" placeholder="email"
-										   value="<%=request.getAttribute("email")==null?"":request.getAttribute("email")%>"
+										   value="${requestScope.email}"
 										   autocomplete="off" tabindex="1" name="email" id="email" />
 									<br />
 									<br />
