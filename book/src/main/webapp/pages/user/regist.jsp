@@ -106,7 +106,8 @@
 								</span>
 							</div>
 							<div class="form">
-								<form action="registServlet" method="post">
+								<form action="userServlet" method="post">
+									<input type="hidden" name="action" value="regist">
 									<input class="itxt" type="text" placeholder="Username"
 										   value="<%=request.getAttribute("username")==null?"":request.getAttribute("username")%>"
 										   autocomplete="off" tabindex="1" name="username" id="username" />
