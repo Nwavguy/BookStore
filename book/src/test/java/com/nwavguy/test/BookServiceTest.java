@@ -1,6 +1,7 @@
 package com.nwavguy.test;
 
 import com.nwavguy.pojo.Book;
+import com.nwavguy.pojo.Page;
 import com.nwavguy.service.BookService;
 import com.nwavguy.service.impl.BookServiceImpl;
 import org.junit.Test;
@@ -38,5 +39,10 @@ public class BookServiceTest {
         for (Book queryBook : bookService.queryBooks()) {
             System.out.println(queryBook);
         }
+    }
+
+    @Test
+    public void page() {
+        System.out.println(bookService.page(2, Page.PAGE_SIZE));
     }
 }

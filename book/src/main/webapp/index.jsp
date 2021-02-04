@@ -159,15 +159,15 @@
 			</div>
 		
 		<div id="page_nav">
-		<a href="#">Home</a>
-		<a href="#">Previous Page</a>
-		<a href="#">3</a>
-		【4】
-		<a href="#">5</a>
-		<a href="#">Next Page</a>
-		<a href="#">Last Page</a>
-		10 pages，30 records to <input value="4" name="pn" id="pn_input"/> page
-		<input type="button" value="go">
+			<a href="#">Home</a>
+			<a href="#">Previous Page</a>
+			<a href="#">3</a>
+			【4】
+			<a href="#">5</a>
+			<a href="#">Next Page</a>
+			<a href="#">Last Page</a>
+			10 pages，30 records to <input value="4" name="pn" id="pn_input"/> page
+			<input type="button" value="go">
 		</div>
 	
 	</div>

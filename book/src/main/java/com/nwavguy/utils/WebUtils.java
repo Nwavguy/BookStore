@@ -31,12 +31,13 @@ public class WebUtils {
      * @param defaultValue
      * @return
      */
-    public static int parseInt(String strInt, int defaultValue) {
+
+    public static int parseInt(String strInt,int defaultValue) {
         try {
             return Integer.parseInt(strInt);
         } catch (Exception e) {
-            e.printStackTrace();
+//            e.printStackTrace();
         }
-        return  defaultValue;
+        return defaultValue;
     }
 }
