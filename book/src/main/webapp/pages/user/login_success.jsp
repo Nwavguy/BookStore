@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>尚硅谷会员注册页面</title>
+<title>Register Page</title>
 	<%--include the base tag, css style and jquery file--%>
 	<%@ include file="/pages/common/head.jsp"%>
 <style type="text/css">
@@ -26,7 +26,7 @@
 		
 		<div id="main">
 		
-			<h1>欢迎回来 <a href="../../index.jsp">转到主页</a></h1>
+			<h1>WelcomeBack <a href="../../index.jsp">Home</a></h1>
 	
 		</div>
 
